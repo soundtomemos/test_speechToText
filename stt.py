@@ -29,7 +29,7 @@ def recognized(evt):
     print('「{}」'.format(evt.result.text))
     # do something
     # to text file
-    with open(path_w, mode="a") as f:
+    with open(path_w, mode="a", encoding="utf-8") as f:
         f.write(evt.result.text + "\n")
 
 def start(evt):
